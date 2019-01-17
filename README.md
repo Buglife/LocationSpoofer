@@ -122,6 +122,11 @@ LOSPLocationDebugViewController *vc = [[LOSPLocationDebugViewController alloc] i
 [self presentViewController:vc animated:YES completion:nil];
 ```
 
+## FAQ
+
+Q: Is LocationSpoofer safe for use in App Store apps?
+A: Yes! LocationSpoofer does not use any private APIs.
+
 ## Authors
 
 LocationSpoofer is built by the [Buglife](https://buglife.com) team, and we hope it saves you some unnecessary driving :)
