@@ -1,0 +1,926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BA226B10EF671FFF40DCFCB4EDE29FB /* CLPlacemark+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E66AEC9ADF2D0775BFA27F9DC53690 /* CLPlacemark+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F00EC4E038573C8BF318720097530F1 /* LOSPPresetTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B6FB623366626099627B4D49BDC698 /* LOSPPresetTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FB36201962CB95B4AE972E89847AA6F /* CLLocationCoordinate2D+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8773B43571F4A7B2C7FE0453F6ACB1A6 /* CLLocationCoordinate2D+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		137C61D0948A228B7B672B3C60176E4D /* MKCoordinateSpan+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A455C2D8C8CA0433818B8496198809A6 /* MKCoordinateSpan+LOSPAdditions.m */; };
+		1519062BBBB199D935F9E490A5E54993 /* LOSPLocationPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2576068D7E1ADF5EDB44C8C0218AFA95 /* LOSPLocationPickerViewController.m */; };
+		2470FAF128CC95C58BB1F4A5799EF812 /* LOSPSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EDAB7C244E7A1C934A9A4AD134CEC81 /* LOSPSwizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24853655E45B627C376CD2715784CD70 /* UIView+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 188D196FC9C9BFA3B47D0EF6CAE6C4E5 /* UIView+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25D6E2720214B8F4056794275411FF48 /* MKMapView+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E59D6DB14D527912A2C949C07FB95CEC /* MKMapView+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373CD1617995580EA6F0FE082591D773 /* UIView+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F7EC30F5F56461CBA5975D5CC5AB81 /* UIView+LOSPAdditions.m */; };
+		3A3D87A5A3B752404FF9B459C9E0FFF9 /* MKCoordinateSpan+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B60EE2B428BE9110C4FFEA600B500C98 /* MKCoordinateSpan+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4449E03A5130A224DC5ABDFB427972EF /* LocationSpoofer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F85DFB871D6606A89F1CE1D31BAF021F /* LocationSpoofer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4828C5733841DCABACF7D052FDE5DAD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
+		4BB8AFAC294BAB273E0DCFDEE05CA94B /* LOSPLocationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DAF1F5C0F28DE6F7204E536608161B6 /* LOSPLocationProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		516F6DCC5E4A86088E9F3AA2B94465E4 /* LOSPLocationPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1EA8CD6A727DA6E493893B82375DBF /* LOSPLocationPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55A7BBC1B26C37232704898A5E016AB9 /* LOSPLocationDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EF8093E3F52993D669EB11B515EC79 /* LOSPLocationDebugViewController.m */; };
+		570E463632D5E31C824BB9ED3E21764C /* LOSPLocationSpoofer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAD422DC1F4E28483A0BEA671B040C1 /* LOSPLocationSpoofer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2DD8C6EBF5324E176AD14256146F26 /* LOSPLocationDebugViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF9C1041440BF4D8800533EF6A56A14 /* LOSPLocationDebugViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6498A2ECF25A3A97EC1F0234AD071C4B /* LOSPTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2326CCF9AD9938ECB2C66905D66F4 /* LOSPTrip.m */; };
+		6956CFEC8D0AE1CBAB1405840527C2BF /* LOSPTrip+LOSPPresets.h in Headers */ = {isa = PBXBuildFile; fileRef = C401959FBACB2738BE9763A35F697423 /* LOSPTrip+LOSPPresets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CAB1130CD259161DC6C87690BA4A65B /* CLPlacemark+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C28B4CE0C236734C3EF651462556120F /* CLPlacemark+LOSPAdditions.m */; };
+		860BF942CC1718EE193DA5B500FBF4EE /* Pods-LocationSpoofer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3C551A41DD65F265EEC010EEDBC55B /* Pods-LocationSpoofer_Tests-dummy.m */; };
+		8660845CC84CE86CEBC51E39F2C579FC /* LOSPTrip.h in Headers */ = {isa = PBXBuildFile; fileRef = 560F36E80DCE8CFEA65199DB2664FD9A /* LOSPTrip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD11EA4B0CBCE4A462E0FDDD6C5F7C2 /* CLLocation+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC44E6A2E06B547BD0CA85CA4A1E865 /* CLLocation+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F6D95AC0AE1DA7BF827E5023631A6F /* CLLocation+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3EBCC94D4EA13AA5AD2C33ACDE5F44 /* CLLocation+LOSPAdditions.m */; };
+		A537F36FFD56A948D12A75521A44DC90 /* LOSPTrip+LOSPPresets.m in Sources */ = {isa = PBXBuildFile; fileRef = 770B09A46278B0CF42D1D79108301EFC /* LOSPTrip+LOSPPresets.m */; };
+		A83BF5F0B5044C047471762239564EE0 /* LOSPPresetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FA13D7BB730CDA48C2FBCE8A5421BB /* LOSPPresetTableViewController.m */; };
+		A9522EF3B6C3884220D0DEA239DA6F06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
+		AD4CCC9BACDC6D8D6745B472A9F6CDAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */; };
+		BA840477ECE64E61BCB1AFCC0EF25A1A /* LOSPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6935D5F8D2882EF8660B60F960E289 /* LOSPRootViewController.m */; };
+		BFD3CCA148C00C7A44075B0CAF018F7B /* Pods-LocationSpoofer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D29D23D72EDF7384E0C92B227026B6D /* Pods-LocationSpoofer_Example-dummy.m */; };
+		CC169745F178FC0CC7732711C17A48CB /* LOSPSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2107EBC08BF558B4F1AF255E199476AA /* LOSPSwizzler.m */; };
+		CF3F39C73BA17B9F3113C199B446AF60 /* LOSPRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B8962091A16B5B6E8B34B4F7E9B4A076 /* LOSPRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D978CBAD4AD4D6523CAA8C0928946F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */; };
+		D75992475EC80FCD2AA5F9CFB90F9FBC /* MKDirections+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF5FD897211406A5836D18AF8358740 /* MKDirections+LOSPAdditions.m */; };
+		DDF0167F86C24B33CC91E1174DF1F9FA /* Pods-LocationSpoofer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FB636EB5DB5E28B7CA68595848864D /* Pods-LocationSpoofer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E45E693E68BC067B3E850ED77C4968F7 /* CLLocationCoordinate2D+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 116B81574331C66F3954A4882B2AD9F3 /* CLLocationCoordinate2D+LOSPAdditions.m */; };
+		E8B76F1939D8EAE877906264F55FBA8E /* Pods-LocationSpoofer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B273BBD1F42DDFEAFE50A3833A95D90A /* Pods-LocationSpoofer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECDE0D55437A1F95FD6923CAD0B1919 /* LOSPLocationSpoofer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29624D8D78F03B5576E94F7B05D1F18C /* LOSPLocationSpoofer.m */; };
+		F13733148659556FCAC511A5F33187C8 /* MKDirections+LOSPAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F1752ED3B4245A8E4595003A117108 /* MKDirections+LOSPAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F685DAC7E7F539D5DEC3DB2400891022 /* MKMapView+LOSPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC34F9DD7F0BC0DACF1B57383C6B97A /* MKMapView+LOSPAdditions.m */; };
+		F9AFC8369CDE7781C765460740C49945 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28532A6402F0DE0FD1D00B0C7871511D /* MapKit.framework */; };
+		FB6B3F3F32FE6BE462E44FC4ADCB3D93 /* LocationSpoofer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D756ADDDC5AA8D8DA22121960EE8B /* LocationSpoofer-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C96FE5953724A321CA3ECD0269E698C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 588DB04FB5D5C8634585DEDD25F29105;
+			remoteInfo = "Pods-LocationSpoofer_Example";
+		};
+		B5CEAF45301ECCF930F9114301BC776D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0372DFF0D7CD4A7318A473065557D4BF;
+			remoteInfo = LocationSpoofer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058FBE0A27C14A16AFC5AD6E6F1391EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0745DEE5B79D393EBCD9B78AE97BA1C5 /* Pods-LocationSpoofer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocationSpoofer_Example.modulemap"; sourceTree = "<group>"; };
+		116B81574331C66F3954A4882B2AD9F3 /* CLLocationCoordinate2D+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLLocationCoordinate2D+LOSPAdditions.m"; sourceTree = "<group>"; };
+		12F1752ED3B4245A8E4595003A117108 /* MKDirections+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDirections+LOSPAdditions.h"; sourceTree = "<group>"; };
+		1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		188D196FC9C9BFA3B47D0EF6CAE6C4E5 /* UIView+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LOSPAdditions.h"; sourceTree = "<group>"; };
+		1B7D756ADDDC5AA8D8DA22121960EE8B /* LocationSpoofer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocationSpoofer-dummy.m"; sourceTree = "<group>"; };
+		1FA2326CCF9AD9938ECB2C66905D66F4 /* LOSPTrip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPTrip.m; sourceTree = "<group>"; };
+		2107EBC08BF558B4F1AF255E199476AA /* LOSPSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPSwizzler.m; sourceTree = "<group>"; };
+		2576068D7E1ADF5EDB44C8C0218AFA95 /* LOSPLocationPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPLocationPickerViewController.m; sourceTree = "<group>"; };
+		284294F76D1897EB0A0EC508BF894B3A /* Pods-LocationSpoofer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocationSpoofer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		28532A6402F0DE0FD1D00B0C7871511D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		29624D8D78F03B5576E94F7B05D1F18C /* LOSPLocationSpoofer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPLocationSpoofer.m; sourceTree = "<group>"; };
+		29742DA5239AABAD33D8B70A4EB50129 /* Pods-LocationSpoofer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocationSpoofer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		30D63C366B20BF2E5CAF110EDB56BF92 /* LocationSpoofer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocationSpoofer.xcconfig; sourceTree = "<group>"; };
+		31E66AEC9ADF2D0775BFA27F9DC53690 /* CLPlacemark+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLPlacemark+LOSPAdditions.h"; sourceTree = "<group>"; };
+		341790898B3FE1E15BA18405C7DAC89D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3D29D23D72EDF7384E0C92B227026B6D /* Pods-LocationSpoofer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocationSpoofer_Example-dummy.m"; sourceTree = "<group>"; };
+		4E1EA8CD6A727DA6E493893B82375DBF /* LOSPLocationPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPLocationPickerViewController.h; sourceTree = "<group>"; };
+		4F77C618EFA66F2F481145DBD6E763D9 /* LocationSpoofer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocationSpoofer.framework; path = LocationSpoofer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502C663599FBD766CC24F0AA88F09E00 /* Pods-LocationSpoofer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocationSpoofer_Example-resources.sh"; sourceTree = "<group>"; };
+		52D9BC5BCF541D20E388F09C68990EBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560F36E80DCE8CFEA65199DB2664FD9A /* LOSPTrip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPTrip.h; sourceTree = "<group>"; };
+		58F96502FDA39D26CF4916FA2EDFC10A /* Pods-LocationSpoofer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocationSpoofer_Tests.modulemap"; sourceTree = "<group>"; };
+		59D5520A7C373D4181622F093AFBCBED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDAB7C244E7A1C934A9A4AD134CEC81 /* LOSPSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPSwizzler.h; sourceTree = "<group>"; };
+		6A3EBCC94D4EA13AA5AD2C33ACDE5F44 /* CLLocation+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+LOSPAdditions.m"; sourceTree = "<group>"; };
+		76FA13D7BB730CDA48C2FBCE8A5421BB /* LOSPPresetTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPPresetTableViewController.m; sourceTree = "<group>"; };
+		770B09A46278B0CF42D1D79108301EFC /* LOSPTrip+LOSPPresets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LOSPTrip+LOSPPresets.m"; sourceTree = "<group>"; };
+		77B6FB623366626099627B4D49BDC698 /* LOSPPresetTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPPresetTableViewController.h; sourceTree = "<group>"; };
+		7ACE520E729F9E7C8CEFD659BFE00122 /* Pods-LocationSpoofer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocationSpoofer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		81EF8093E3F52993D669EB11B515EC79 /* LOSPLocationDebugViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPLocationDebugViewController.m; sourceTree = "<group>"; };
+		834A3A2EBD5E11BFF08DE5F1F981E337 /* LocationSpoofer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocationSpoofer-prefix.pch"; sourceTree = "<group>"; };
+		8773B43571F4A7B2C7FE0453F6ACB1A6 /* CLLocationCoordinate2D+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLLocationCoordinate2D+LOSPAdditions.h"; sourceTree = "<group>"; };
+		883D7A54249F277EE449AB6FA40CB957 /* Pods-LocationSpoofer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocationSpoofer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		891D9325521CD546DD830B86F7E9B3C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8DAF1F5C0F28DE6F7204E536608161B6 /* LOSPLocationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPLocationProvider.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		99666A89E2B061849BDFE854FB5CB324 /* Pods-LocationSpoofer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocationSpoofer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9E6935D5F8D2882EF8660B60F960E289 /* LOSPRootViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LOSPRootViewController.m; sourceTree = "<group>"; };
+		A455C2D8C8CA0433818B8496198809A6 /* MKCoordinateSpan+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKCoordinateSpan+LOSPAdditions.m"; sourceTree = "<group>"; };
+		A7B31180D360D38CA83ED9D16E91A5A1 /* LocationSpoofer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LocationSpoofer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABC44E6A2E06B547BD0CA85CA4A1E865 /* CLLocation+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLLocation+LOSPAdditions.h"; sourceTree = "<group>"; };
+		ADBABC95333AD52365F2813E4389FE26 /* Pods-LocationSpoofer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocationSpoofer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B273BBD1F42DDFEAFE50A3833A95D90A /* Pods-LocationSpoofer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocationSpoofer_Example-umbrella.h"; sourceTree = "<group>"; };
+		B3D0B1973B6D352BD356F0DD9521E82F /* Pods-LocationSpoofer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocationSpoofer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B4E2A06D0A509AB3FE73E867176001EE /* Pods-LocationSpoofer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocationSpoofer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B60EE2B428BE9110C4FFEA600B500C98 /* MKCoordinateSpan+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKCoordinateSpan+LOSPAdditions.h"; sourceTree = "<group>"; };
+		B8962091A16B5B6E8B34B4F7E9B4A076 /* LOSPRootViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPRootViewController.h; sourceTree = "<group>"; };
+		B8FB636EB5DB5E28B7CA68595848864D /* Pods-LocationSpoofer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocationSpoofer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BEAD422DC1F4E28483A0BEA671B040C1 /* LOSPLocationSpoofer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPLocationSpoofer.h; sourceTree = "<group>"; };
+		C28B4CE0C236734C3EF651462556120F /* CLPlacemark+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLPlacemark+LOSPAdditions.m"; sourceTree = "<group>"; };
+		C401959FBACB2738BE9763A35F697423 /* LOSPTrip+LOSPPresets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LOSPTrip+LOSPPresets.h"; sourceTree = "<group>"; };
+		CB3C551A41DD65F265EEC010EEDBC55B /* Pods-LocationSpoofer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocationSpoofer_Tests-dummy.m"; sourceTree = "<group>"; };
+		CCF5FD897211406A5836D18AF8358740 /* MKDirections+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKDirections+LOSPAdditions.m"; sourceTree = "<group>"; };
+		D23043A1C2A27E5BBF9BE09B5DFEEB29 /* Pods_LocationSpoofer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocationSpoofer_Tests.framework; path = "Pods-LocationSpoofer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D280251C114C64B7A4B9F4190DA53CE5 /* Pods_LocationSpoofer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocationSpoofer_Example.framework; path = "Pods-LocationSpoofer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7BB5289150427843422E13C1B76291 /* Pods-LocationSpoofer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocationSpoofer_Tests-resources.sh"; sourceTree = "<group>"; };
+		DBC34F9DD7F0BC0DACF1B57383C6B97A /* MKMapView+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+LOSPAdditions.m"; sourceTree = "<group>"; };
+		E1EA430028F74C7E12C5C8587DB06F98 /* Pods-LocationSpoofer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocationSpoofer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4C1B79652A2E8AD28BF4817C887FBE3 /* LocationSpoofer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocationSpoofer.modulemap; sourceTree = "<group>"; };
+		E59D6DB14D527912A2C949C07FB95CEC /* MKMapView+LOSPAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKMapView+LOSPAdditions.h"; sourceTree = "<group>"; };
+		F0F7EC30F5F56461CBA5975D5CC5AB81 /* UIView+LOSPAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LOSPAdditions.m"; sourceTree = "<group>"; };
+		F4FF8FEBBE03C1D4D1997F449CA59C58 /* Pods-LocationSpoofer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocationSpoofer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F85DFB871D6606A89F1CE1D31BAF021F /* LocationSpoofer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocationSpoofer-umbrella.h"; sourceTree = "<group>"; };
+		FAF9C1041440BF4D8800533EF6A56A14 /* LOSPLocationDebugViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LOSPLocationDebugViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D851A369884F5822583E96CCEA4BB2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4CCC9BACDC6D8D6745B472A9F6CDAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F38FB7D64DC8C077C2CFD4AB0E474B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9522EF3B6C3884220D0DEA239DA6F06 /* Foundation.framework in Frameworks */,
+				F9AFC8369CDE7781C765460740C49945 /* MapKit.framework in Frameworks */,
+				D6D978CBAD4AD4D6523CAA8C0928946F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECFCE4A7960577B588E42BC714F5E5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4828C5733841DCABACF7D052FDE5DAD9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5395C52BEA67E786EEF5898FE0DDAEA7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1272F3EEE0152A6440668A8FE42A8D8A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52D9BC5BCF541D20E388F09C68990EBE /* Info.plist */,
+				E4C1B79652A2E8AD28BF4817C887FBE3 /* LocationSpoofer.modulemap */,
+				30D63C366B20BF2E5CAF110EDB56BF92 /* LocationSpoofer.xcconfig */,
+				1B7D756ADDDC5AA8D8DA22121960EE8B /* LocationSpoofer-dummy.m */,
+				834A3A2EBD5E11BFF08DE5F1F981E337 /* LocationSpoofer-prefix.pch */,
+				F85DFB871D6606A89F1CE1D31BAF021F /* LocationSpoofer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LocationSpoofer";
+			sourceTree = "<group>";
+		};
+		1B876EB1A42150A445351EF69B9B1CFB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE66AB88CA004FBC54A2D8E6D59DDF92 /* Pods-LocationSpoofer_Example */,
+				936FA411D4A99DA248A7AD17560E687C /* Pods-LocationSpoofer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		418A494F64036F4A1B28BF320BEFE55A /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				8773B43571F4A7B2C7FE0453F6ACB1A6 /* CLLocationCoordinate2D+LOSPAdditions.h */,
+				116B81574331C66F3954A4882B2AD9F3 /* CLLocationCoordinate2D+LOSPAdditions.m */,
+				4E1EA8CD6A727DA6E493893B82375DBF /* LOSPLocationPickerViewController.h */,
+				2576068D7E1ADF5EDB44C8C0218AFA95 /* LOSPLocationPickerViewController.m */,
+				77B6FB623366626099627B4D49BDC698 /* LOSPPresetTableViewController.h */,
+				76FA13D7BB730CDA48C2FBCE8A5421BB /* LOSPPresetTableViewController.m */,
+				B8962091A16B5B6E8B34B4F7E9B4A076 /* LOSPRootViewController.h */,
+				9E6935D5F8D2882EF8660B60F960E289 /* LOSPRootViewController.m */,
+				5EDAB7C244E7A1C934A9A4AD134CEC81 /* LOSPSwizzler.h */,
+				2107EBC08BF558B4F1AF255E199476AA /* LOSPSwizzler.m */,
+				12F1752ED3B4245A8E4595003A117108 /* MKDirections+LOSPAdditions.h */,
+				CCF5FD897211406A5836D18AF8358740 /* MKDirections+LOSPAdditions.m */,
+				E59D6DB14D527912A2C949C07FB95CEC /* MKMapView+LOSPAdditions.h */,
+				DBC34F9DD7F0BC0DACF1B57383C6B97A /* MKMapView+LOSPAdditions.m */,
+				188D196FC9C9BFA3B47D0EF6CAE6C4E5 /* UIView+LOSPAdditions.h */,
+				F0F7EC30F5F56461CBA5975D5CC5AB81 /* UIView+LOSPAdditions.m */,
+			);
+			name = Private;
+			path = LocationSpoofer/Classes/Private;
+			sourceTree = "<group>";
+		};
+		5395C52BEA67E786EEF5898FE0DDAEA7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				95F0EA215E99FD0275243E5DF7AFD2FA /* Foundation.framework */,
+				28532A6402F0DE0FD1D00B0C7871511D /* MapKit.framework */,
+				1427DD0302DA501BFF0E846F8D2BF5CD /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9B5A3960BC09550B76BEEB634170500F /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				FAA03D79C930AEA8820E586ABD1B105B /* Products */,
+				1B876EB1A42150A445351EF69B9B1CFB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		936FA411D4A99DA248A7AD17560E687C /* Pods-LocationSpoofer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				058FBE0A27C14A16AFC5AD6E6F1391EF /* Info.plist */,
+				58F96502FDA39D26CF4916FA2EDFC10A /* Pods-LocationSpoofer_Tests.modulemap */,
+				ADBABC95333AD52365F2813E4389FE26 /* Pods-LocationSpoofer_Tests-acknowledgements.markdown */,
+				284294F76D1897EB0A0EC508BF894B3A /* Pods-LocationSpoofer_Tests-acknowledgements.plist */,
+				CB3C551A41DD65F265EEC010EEDBC55B /* Pods-LocationSpoofer_Tests-dummy.m */,
+				29742DA5239AABAD33D8B70A4EB50129 /* Pods-LocationSpoofer_Tests-frameworks.sh */,
+				DB7BB5289150427843422E13C1B76291 /* Pods-LocationSpoofer_Tests-resources.sh */,
+				B8FB636EB5DB5E28B7CA68595848864D /* Pods-LocationSpoofer_Tests-umbrella.h */,
+				E1EA430028F74C7E12C5C8587DB06F98 /* Pods-LocationSpoofer_Tests.debug.xcconfig */,
+				B3D0B1973B6D352BD356F0DD9521E82F /* Pods-LocationSpoofer_Tests.release.xcconfig */,
+			);
+			name = "Pods-LocationSpoofer_Tests";
+			path = "Target Support Files/Pods-LocationSpoofer_Tests";
+			sourceTree = "<group>";
+		};
+		9B5A3960BC09550B76BEEB634170500F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B06E711F0B6C7D3735230624D3FF4967 /* LocationSpoofer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B06E711F0B6C7D3735230624D3FF4967 /* LocationSpoofer */ = {
+			isa = PBXGroup;
+			children = (
+				BF50C2A64D94EF8C7B88B54EC10AAAF5 /* Pod */,
+				418A494F64036F4A1B28BF320BEFE55A /* Private */,
+				F264CF84DCF4165C4327E3CD2FF6E7D8 /* Public */,
+				1272F3EEE0152A6440668A8FE42A8D8A /* Support Files */,
+			);
+			name = LocationSpoofer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BF50C2A64D94EF8C7B88B54EC10AAAF5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				341790898B3FE1E15BA18405C7DAC89D /* LICENSE */,
+				A7B31180D360D38CA83ED9D16E91A5A1 /* LocationSpoofer.podspec */,
+				891D9325521CD546DD830B86F7E9B3C3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F264CF84DCF4165C4327E3CD2FF6E7D8 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				ABC44E6A2E06B547BD0CA85CA4A1E865 /* CLLocation+LOSPAdditions.h */,
+				6A3EBCC94D4EA13AA5AD2C33ACDE5F44 /* CLLocation+LOSPAdditions.m */,
+				31E66AEC9ADF2D0775BFA27F9DC53690 /* CLPlacemark+LOSPAdditions.h */,
+				C28B4CE0C236734C3EF651462556120F /* CLPlacemark+LOSPAdditions.m */,
+				FAF9C1041440BF4D8800533EF6A56A14 /* LOSPLocationDebugViewController.h */,
+				81EF8093E3F52993D669EB11B515EC79 /* LOSPLocationDebugViewController.m */,
+				8DAF1F5C0F28DE6F7204E536608161B6 /* LOSPLocationProvider.h */,
+				BEAD422DC1F4E28483A0BEA671B040C1 /* LOSPLocationSpoofer.h */,
+				29624D8D78F03B5576E94F7B05D1F18C /* LOSPLocationSpoofer.m */,
+				560F36E80DCE8CFEA65199DB2664FD9A /* LOSPTrip.h */,
+				1FA2326CCF9AD9938ECB2C66905D66F4 /* LOSPTrip.m */,
+				C401959FBACB2738BE9763A35F697423 /* LOSPTrip+LOSPPresets.h */,
+				770B09A46278B0CF42D1D79108301EFC /* LOSPTrip+LOSPPresets.m */,
+				B60EE2B428BE9110C4FFEA600B500C98 /* MKCoordinateSpan+LOSPAdditions.h */,
+				A455C2D8C8CA0433818B8496198809A6 /* MKCoordinateSpan+LOSPAdditions.m */,
+			);
+			name = Public;
+			path = LocationSpoofer/Classes/Public;
+			sourceTree = "<group>";
+		};
+		FAA03D79C930AEA8820E586ABD1B105B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F77C618EFA66F2F481145DBD6E763D9 /* LocationSpoofer.framework */,
+				D280251C114C64B7A4B9F4190DA53CE5 /* Pods_LocationSpoofer_Example.framework */,
+				D23043A1C2A27E5BBF9BE09B5DFEEB29 /* Pods_LocationSpoofer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE66AB88CA004FBC54A2D8E6D59DDF92 /* Pods-LocationSpoofer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				59D5520A7C373D4181622F093AFBCBED /* Info.plist */,
+				0745DEE5B79D393EBCD9B78AE97BA1C5 /* Pods-LocationSpoofer_Example.modulemap */,
+				7ACE520E729F9E7C8CEFD659BFE00122 /* Pods-LocationSpoofer_Example-acknowledgements.markdown */,
+				B4E2A06D0A509AB3FE73E867176001EE /* Pods-LocationSpoofer_Example-acknowledgements.plist */,
+				3D29D23D72EDF7384E0C92B227026B6D /* Pods-LocationSpoofer_Example-dummy.m */,
+				883D7A54249F277EE449AB6FA40CB957 /* Pods-LocationSpoofer_Example-frameworks.sh */,
+				502C663599FBD766CC24F0AA88F09E00 /* Pods-LocationSpoofer_Example-resources.sh */,
+				B273BBD1F42DDFEAFE50A3833A95D90A /* Pods-LocationSpoofer_Example-umbrella.h */,
+				99666A89E2B061849BDFE854FB5CB324 /* Pods-LocationSpoofer_Example.debug.xcconfig */,
+				F4FF8FEBBE03C1D4D1997F449CA59C58 /* Pods-LocationSpoofer_Example.release.xcconfig */,
+			);
+			name = "Pods-LocationSpoofer_Example";
+			path = "Target Support Files/Pods-LocationSpoofer_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1370C1E9ED8D2E2C9005ECE29FFD138E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B76F1939D8EAE877906264F55FBA8E /* Pods-LocationSpoofer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779724DECAAFE07F5FACCB95421AD8BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF0167F86C24B33CC91E1174DF1F9FA /* Pods-LocationSpoofer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C676B523AA11F581A33C69ED5064D00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD11EA4B0CBCE4A462E0FDDD6C5F7C2 /* CLLocation+LOSPAdditions.h in Headers */,
+				0FB36201962CB95B4AE972E89847AA6F /* CLLocationCoordinate2D+LOSPAdditions.h in Headers */,
+				0BA226B10EF671FFF40DCFCB4EDE29FB /* CLPlacemark+LOSPAdditions.h in Headers */,
+				4449E03A5130A224DC5ABDFB427972EF /* LocationSpoofer-umbrella.h in Headers */,
+				5D2DD8C6EBF5324E176AD14256146F26 /* LOSPLocationDebugViewController.h in Headers */,
+				516F6DCC5E4A86088E9F3AA2B94465E4 /* LOSPLocationPickerViewController.h in Headers */,
+				4BB8AFAC294BAB273E0DCFDEE05CA94B /* LOSPLocationProvider.h in Headers */,
+				570E463632D5E31C824BB9ED3E21764C /* LOSPLocationSpoofer.h in Headers */,
+				0F00EC4E038573C8BF318720097530F1 /* LOSPPresetTableViewController.h in Headers */,
+				CF3F39C73BA17B9F3113C199B446AF60 /* LOSPRootViewController.h in Headers */,
+				2470FAF128CC95C58BB1F4A5799EF812 /* LOSPSwizzler.h in Headers */,
+				6956CFEC8D0AE1CBAB1405840527C2BF /* LOSPTrip+LOSPPresets.h in Headers */,
+				8660845CC84CE86CEBC51E39F2C579FC /* LOSPTrip.h in Headers */,
+				3A3D87A5A3B752404FF9B459C9E0FFF9 /* MKCoordinateSpan+LOSPAdditions.h in Headers */,
+				F13733148659556FCAC511A5F33187C8 /* MKDirections+LOSPAdditions.h in Headers */,
+				25D6E2720214B8F4056794275411FF48 /* MKMapView+LOSPAdditions.h in Headers */,
+				24853655E45B627C376CD2715784CD70 /* UIView+LOSPAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0372DFF0D7CD4A7318A473065557D4BF /* LocationSpoofer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D4600179D038F4F7130BAE2DF3B106B /* Build configuration list for PBXNativeTarget "LocationSpoofer" */;
+			buildPhases = (
+				8C676B523AA11F581A33C69ED5064D00 /* Headers */,
+				174C0AC282771E959E127083632BF2CD /* Sources */,
+				75F38FB7D64DC8C077C2CFD4AB0E474B /* Frameworks */,
+				F5B4D4D010FBF58AEA67FBEEED244D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationSpoofer;
+			productName = LocationSpoofer;
+			productReference = 4F77C618EFA66F2F481145DBD6E763D9 /* LocationSpoofer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		588DB04FB5D5C8634585DEDD25F29105 /* Pods-LocationSpoofer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA107E1C2C25A7E648DAD17799E5D44D /* Build configuration list for PBXNativeTarget "Pods-LocationSpoofer_Example" */;
+			buildPhases = (
+				1370C1E9ED8D2E2C9005ECE29FFD138E /* Headers */,
+				0EF28CC98F530B649B5658F91D1EBF40 /* Sources */,
+				6D851A369884F5822583E96CCEA4BB2B /* Frameworks */,
+				DCABFE8DAF48AA6582CE08C484BB0524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C3DC1C962C1507E7645F72641DDDC15 /* PBXTargetDependency */,
+			);
+			name = "Pods-LocationSpoofer_Example";
+			productName = "Pods-LocationSpoofer_Example";
+			productReference = D280251C114C64B7A4B9F4190DA53CE5 /* Pods_LocationSpoofer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1A33DA7659A9487F0E7204453BE188F /* Pods-LocationSpoofer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59331226F95EA3018CC4B7802EB12105 /* Build configuration list for PBXNativeTarget "Pods-LocationSpoofer_Tests" */;
+			buildPhases = (
+				779724DECAAFE07F5FACCB95421AD8BC /* Headers */,
+				9632463C0FE21EFF97A71D1A9C06EDA7 /* Sources */,
+				ECFCE4A7960577B588E42BC714F5E5F3 /* Frameworks */,
+				DEE8859B2FE23CB0F4BAE9BEB6576811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CB54A2106F8DB0495BCEC1C0E5BF544 /* PBXTargetDependency */,
+			);
+			name = "Pods-LocationSpoofer_Tests";
+			productName = "Pods-LocationSpoofer_Tests";
+			productReference = D23043A1C2A27E5BBF9BE09B5DFEEB29 /* Pods_LocationSpoofer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FAA03D79C930AEA8820E586ABD1B105B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0372DFF0D7CD4A7318A473065557D4BF /* LocationSpoofer */,
+				588DB04FB5D5C8634585DEDD25F29105 /* Pods-LocationSpoofer_Example */,
+				F1A33DA7659A9487F0E7204453BE188F /* Pods-LocationSpoofer_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCABFE8DAF48AA6582CE08C484BB0524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE8859B2FE23CB0F4BAE9BEB6576811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B4D4D010FBF58AEA67FBEEED244D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EF28CC98F530B649B5658F91D1EBF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD3CCA148C00C7A44075B0CAF018F7B /* Pods-LocationSpoofer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174C0AC282771E959E127083632BF2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F6D95AC0AE1DA7BF827E5023631A6F /* CLLocation+LOSPAdditions.m in Sources */,
+				E45E693E68BC067B3E850ED77C4968F7 /* CLLocationCoordinate2D+LOSPAdditions.m in Sources */,
+				7CAB1130CD259161DC6C87690BA4A65B /* CLPlacemark+LOSPAdditions.m in Sources */,
+				FB6B3F3F32FE6BE462E44FC4ADCB3D93 /* LocationSpoofer-dummy.m in Sources */,
+				55A7BBC1B26C37232704898A5E016AB9 /* LOSPLocationDebugViewController.m in Sources */,
+				1519062BBBB199D935F9E490A5E54993 /* LOSPLocationPickerViewController.m in Sources */,
+				EECDE0D55437A1F95FD6923CAD0B1919 /* LOSPLocationSpoofer.m in Sources */,
+				A83BF5F0B5044C047471762239564EE0 /* LOSPPresetTableViewController.m in Sources */,
+				BA840477ECE64E61BCB1AFCC0EF25A1A /* LOSPRootViewController.m in Sources */,
+				CC169745F178FC0CC7732711C17A48CB /* LOSPSwizzler.m in Sources */,
+				A537F36FFD56A948D12A75521A44DC90 /* LOSPTrip+LOSPPresets.m in Sources */,
+				6498A2ECF25A3A97EC1F0234AD071C4B /* LOSPTrip.m in Sources */,
+				137C61D0948A228B7B672B3C60176E4D /* MKCoordinateSpan+LOSPAdditions.m in Sources */,
+				D75992475EC80FCD2AA5F9CFB90F9FBC /* MKDirections+LOSPAdditions.m in Sources */,
+				F685DAC7E7F539D5DEC3DB2400891022 /* MKMapView+LOSPAdditions.m in Sources */,
+				373CD1617995580EA6F0FE082591D773 /* UIView+LOSPAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9632463C0FE21EFF97A71D1A9C06EDA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860BF942CC1718EE193DA5B500FBF4EE /* Pods-LocationSpoofer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CB54A2106F8DB0495BCEC1C0E5BF544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LocationSpoofer_Example";
+			target = 588DB04FB5D5C8634585DEDD25F29105 /* Pods-LocationSpoofer_Example */;
+			targetProxy = 8C96FE5953724A321CA3ECD0269E698C /* PBXContainerItemProxy */;
+		};
+		5C3DC1C962C1507E7645F72641DDDC15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocationSpoofer;
+			target = 0372DFF0D7CD4A7318A473065557D4BF /* LocationSpoofer */;
+			targetProxy = B5CEAF45301ECCF930F9114301BC776D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13ED9829070960DFB9BA07D11B069366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EA430028F74C7E12C5C8587DB06F98 /* Pods-LocationSpoofer_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocationSpoofer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocationSpoofer_Tests/Pods-LocationSpoofer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		140CFAAAF0A5AB347577402F19C88FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D63C366B20BF2E5CAF110EDB56BF92 /* LocationSpoofer.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocationSpoofer/LocationSpoofer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocationSpoofer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LocationSpoofer/LocationSpoofer.modulemap";
+				PRODUCT_MODULE_NAME = LocationSpoofer;
+				PRODUCT_NAME = LocationSpoofer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64EBFE84D35ED663685590C566AD8628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4FF8FEBBE03C1D4D1997F449CA59C58 /* Pods-LocationSpoofer_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocationSpoofer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocationSpoofer_Example/Pods-LocationSpoofer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		93863DFD2A308769CB6503C3588D048A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99666A89E2B061849BDFE854FB5CB324 /* Pods-LocationSpoofer_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocationSpoofer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocationSpoofer_Example/Pods-LocationSpoofer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A443F3C451032B66B95844B80D7B405F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D63C366B20BF2E5CAF110EDB56BF92 /* LocationSpoofer.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocationSpoofer/LocationSpoofer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocationSpoofer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LocationSpoofer/LocationSpoofer.modulemap";
+				PRODUCT_MODULE_NAME = LocationSpoofer;
+				PRODUCT_NAME = LocationSpoofer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EDB127F69787A6AD691B5E873992CEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D0B1973B6D352BD356F0DD9521E82F /* Pods-LocationSpoofer_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocationSpoofer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocationSpoofer_Tests/Pods-LocationSpoofer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D4600179D038F4F7130BAE2DF3B106B /* Build configuration list for PBXNativeTarget "LocationSpoofer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A443F3C451032B66B95844B80D7B405F /* Debug */,
+				140CFAAAF0A5AB347577402F19C88FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59331226F95EA3018CC4B7802EB12105 /* Build configuration list for PBXNativeTarget "Pods-LocationSpoofer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13ED9829070960DFB9BA07D11B069366 /* Debug */,
+				EDB127F69787A6AD691B5E873992CEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA107E1C2C25A7E648DAD17799E5D44D /* Build configuration list for PBXNativeTarget "Pods-LocationSpoofer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93863DFD2A308769CB6503C3588D048A /* Debug */,
+				64EBFE84D35ED663685590C566AD8628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

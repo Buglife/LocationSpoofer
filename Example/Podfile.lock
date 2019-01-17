@@ -1,0 +1,16 @@
+PODS:
+  - LocationSpoofer (0.1.0)
+
+DEPENDENCIES:
+  - LocationSpoofer (from `../`)
+
+EXTERNAL SOURCES:
+  LocationSpoofer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LocationSpoofer: 2e5696c3bcb31e704681e5e4023a8d3c2fdaaac9
+
+PODFILE CHECKSUM: f4d8c655806764910f3d3cf951dadcdf97ffbfa6
+
+COCOAPODS: 1.5.3

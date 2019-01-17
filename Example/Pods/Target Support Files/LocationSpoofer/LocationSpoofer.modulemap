@@ -1,0 +1,6 @@
+framework module LocationSpoofer {
+  umbrella header "LocationSpoofer-umbrella.h"
+
+  export *
+  module * { export * }
+}

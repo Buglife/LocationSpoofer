@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LocationSpoofer_Example' do
+  pod 'LocationSpoofer', :path => '../'
+
+  target 'LocationSpoofer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
