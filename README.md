@@ -1,3 +1,6 @@
+<img src="debug_view_controller.png" alt="Screenshots of the debug view controllers" align="right" height="400" />
+
+
 # LocationSpoofer
 
 [![Platform](https://img.shields.io/cocoapods/p/LocationSpoofer.svg?style=flat)](https://cocoapods.org/pods/LocationSpoofer)
@@ -118,8 +121,6 @@ present(vc, animated: true)
 LOSPLocationDebugViewController *vc = [[LOSPLocationDebugViewController alloc] init];
 [self presentViewController:vc animated:YES completion:nil];
 ```
-
-<img src="debug_view_controller.png" alt="Screenshots of the debug view controllers" />
 
 ## Authors
 
