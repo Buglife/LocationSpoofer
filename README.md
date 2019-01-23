@@ -1,8 +1,5 @@
-<img src="Docs/readme_logo.png" alt="LocationSpoofer logo" />
+<img src="Docs/readme_logo.png" alt="LocationSpoofer logo" width="400" />
 <img src="Docs/debug_view_controller.png" alt="Screenshots of the debug view controllers" align="right" height="400" />
-
-
-# LocationSpoofer
 
 [![Platform](https://img.shields.io/cocoapods/p/LocationSpoofer.svg?style=flat)](https://cocoapods.org/pods/LocationSpoofer)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/LocationSpoofer.svg)](https://cocoapods.org/pods/LocationSpoofer)
