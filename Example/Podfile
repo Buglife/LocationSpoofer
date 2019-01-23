@@ -2,10 +2,5 @@ use_frameworks!
 
 target 'LocationSpoofer_Example' do
   pod 'LocationSpoofer', :path => '../'
-
-  target 'LocationSpoofer_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'Buglife', '~> 2.9.0'
 end

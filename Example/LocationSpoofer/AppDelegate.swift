@@ -7,6 +7,7 @@
 
 import UIKit
 import LocationSpoofer
+import Buglife
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,7 +24,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
+        configureBuglife()
+        
         return true
+    }
+    
+    private func configureBuglife() {
+        Buglife.shared().start(withAPIKey: "QRhrGr7g7W5EvGRTK9ctmgtt")
+        
+        // Customize Buglife's appearance
+        Buglife.shared().appearance.tintColor = .white
+        Buglife.shared().appearance.barTintColor = UIColor(red: 0, green: 0.48, blue: 1, alpha: 1)
+        Buglife.shared().appearance.statusBarStyle = .lightContent
+        
+        // Show both the email field and the summary field
+        Buglife.shared().inputFields = [LIFETextInputField.userEmail(), LIFETextInputField.summary()];
     }
 }
 

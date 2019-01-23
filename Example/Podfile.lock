@@ -1,16 +1,23 @@
 PODS:
+  - Buglife (2.9.0)
   - LocationSpoofer (0.1.0)
 
 DEPENDENCIES:
+  - Buglife (~> 2.9.0)
   - LocationSpoofer (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Buglife
 
 EXTERNAL SOURCES:
   LocationSpoofer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LocationSpoofer: 2e5696c3bcb31e704681e5e4023a8d3c2fdaaac9
+  Buglife: 6ff34eee40337173f4a2c1e0c97ab971d6289e7a
+  LocationSpoofer: f69adeae36daa98e9dc512f8c55e95e4ba5734cc
 
-PODFILE CHECKSUM: f4d8c655806764910f3d3cf951dadcdf97ffbfa6
+PODFILE CHECKSUM: 9fc7773297f255df5eda43dc49d996e4563ce7c7
 
 COCOAPODS: 1.5.3
