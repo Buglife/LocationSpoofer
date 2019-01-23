@@ -1,4 +1,5 @@
-<img src="debug_view_controller.png" alt="Screenshots of the debug view controllers" align="right" height="400" />
+<img src="Docs/readme_logo.png" alt="LocationSpoofer logo" />
+<img src="Docs/debug_view_controller.png" alt="Screenshots of the debug view controllers" align="right" height="400" />
 
 
 # LocationSpoofer
@@ -78,6 +79,7 @@ Trip.getWithStartAddress(startAddress, endAddress: endAddress, duration: 10) { t
 	}
 	LocationSpoofer.shared.location = trip
 }
+```
 
 ```objc
 /// Objective-C

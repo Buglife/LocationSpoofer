@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Customize Buglife's appearance
         Buglife.shared().appearance.tintColor = .white
-        Buglife.shared().appearance.barTintColor = UIColor(red: 0, green: 0.48, blue: 1, alpha: 1)
+        Buglife.shared().appearance.barTintColor = .ls_appTintColor
         Buglife.shared().appearance.statusBarStyle = .lightContent
         
         // Show both the email field and the summary field

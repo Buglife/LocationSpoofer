@@ -11,6 +11,7 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		B740CE2A21F859CD00897E39 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740CE2921F859CD00897E39 /* UIColor+Additions.swift */; };
 		B7ED0FA221E6BE7200084C64 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ED0FA121E6BE7200084C64 /* DebugViewController.swift */; };
 		DD9E79260B9004EFC5CF3239 /* Pods_LocationSpoofer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8EC84D52C2C8246DF39341C /* Pods_LocationSpoofer_Example.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		816A251D79945FA15B739579 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9CB377CA0694E1B4F80E839E /* Pods_LocationSpoofer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationSpoofer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9506DF41B5A3EEAA4AFB3B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B740CE2921F859CD00897E39 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		B7ED0FA121E6BE7200084C64 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		BA44D1E2410FE4451E508A88 /* LocationSpoofer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LocationSpoofer.podspec; path = ../LocationSpoofer.podspec; sourceTree = "<group>"; };
 		C8EC84D52C2C8246DF39341C /* Pods_LocationSpoofer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationSpoofer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				B7ED0FA121E6BE7200084C64 /* DebugViewController.swift */,
+				B740CE2921F859CD00897E39 /* UIColor+Additions.swift */,
 			);
 			name = "Example for LocationSpoofer";
 			path = LocationSpoofer;
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7ED0FA221E6BE7200084C64 /* DebugViewController.swift in Sources */,
+				B740CE2A21F859CD00897E39 /* UIColor+Additions.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

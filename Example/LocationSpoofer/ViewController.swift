@@ -17,6 +17,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Example App"
         
         mapView.delegate = self
         view.addSubview(mapView)
